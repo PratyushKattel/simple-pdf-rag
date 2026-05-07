@@ -1,0 +1,89 @@
+ 
+ 
+3.6 
+Token based protocols: Token bus, token ring, FDDI 
+3.7 
+Ethernet (IEEE 802.3) and its evolution, bridged and switched Ethernet 
+3.8 
+WLAN (Wi-Fi) and IEEE 802.11 
+3.9 
+VLAN and its importance 
+3.10 Virtual circuit switching: ATM, MPLS 
+ 
+ 
+4 
+Network Layer 
+ 
+ 
+ 
+ 
+ 
+(12 hours) 
+4.1 
+Network layer functions and services 
+4.2 
+Connection oriented and connectionless network services 
+4.3 
+Logical addressing and its importance 
+4.4 
+IPv4 addressing and classes, private and public IP address, sub-netting 
+and super-netting, VLSM, CIDR  
+4.5 
+Unicast, multicast and broadcast addresses 
+4.6 
+Routing and types of routing: Static and dynamic, unicast and multicast, 
+interior and exterior, distance vector and link state 
+4.7 
+Routing protocols: RIP, OSPF, EIGRP, BGP 
+4.8 
+Network address translation (NAT) 
+4.9 
+IPv6 addressing, need and features of iPv6 
+4.10 Protocols: IPv4, ARP, ICMP, IPv6, ICMPv6 
+4.11 Transition from IPv4 to IPv6 and strategies 
+4.12 Traffic shaping and congestion control mechanisms 
+ 
+5 
+Transport Layer 
+ 
+ 
+ 
+ 
+ 
+(5 hours) 
+5.1 
+Transport layer functions and services 
+5.2 
+Elements of transport layer protocols: process-to-process communication, 
+addressing, multiplexing and de-multiplexing, segmentation and 
+reassembly, error control, flow control 
+5.3 
+Transport protocols: TCP and UDP 
+5.4 
+TCP services: connection setup and release, reliable, stream oriented, 
+flow-control, error-control 
+5.5 
+Introduction to socket and socket programming 
+ 
+6 
+Upper Layers and Network Design 
+ 
+ 
+ 
+ (6 hours) 
+6.1 
+Functions and services of session, presentation and application layers 
+6.2 
+Introduction to upper layer protocols: DHCP, HTTP, HTTPS, FTP, SMTP, 
+POP, IMAP 
+6.3 
+DNS, its function and DNS queries 
+6.4 
+Network management tools and protocols (SNMP) 
+6.5 
+Basics of web, e-mail, DNS and proxy server configurations 
+6.6 
+VoIP, FoIP and IP interconnection 
+6.7 
+Network design and configuration guidelines 
+ 

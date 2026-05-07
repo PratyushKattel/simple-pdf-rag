@@ -1,0 +1,17 @@
+[project]
+name = "rag-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "fastapi>=0.136.1",
+    "google-generativeai>=0.8.6",
+    "jinja2>=3.1.6",
+    "pymupdf>=1.27.2.3",
+    "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.27",
+    "sentence-transformers>=5.4.1",
+    "uvicorn>=0.46.0",
+]
