@@ -8,15 +8,12 @@ class Embeder:
     def __init__(self,model = 'sentence-transformers/all-MiniLM-L6-v2'):
         self.model = SentenceTransformer(model , device = 'cpu')
         
-    def embed (self, *args):
+    def embed (self, chunks : list[str]) -> list:
         try :
-            embeddings = self.model.encode(args[0])
-            print(embeddings)
-        except:
-            print(f" Error encoutered in embedding ")
-
-e = Embeder()
-e.embed("I dont believe whats on Tv because its what i want to see :)")
-    
+            embeddings = self.model.encode(chunks,show_progress_bar=True)
+            return embeddings
+        except Exception as e:
+            print(f" Error encoutered while in embedding : {e} ")
+            return []
 
     
