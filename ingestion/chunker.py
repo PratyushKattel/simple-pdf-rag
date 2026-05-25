@@ -6,13 +6,15 @@ class Chunker :
         # self.sperators = ['\n\n','\n','.',' ']
         self.curr = 0 
         self.chunksize = chunksize
+        
 
     def splitsentences(self, text):
-        return text.split('.')
+        sentences = text.split('.')
+        return [ s.strip() for s in sentences if s.strip()]
 
         
     
 
 test_chunker = Chunker()
-x = test_chunker.splitN("New love is this and new logning , should i do what my hall , anyone but you can only say :)")
+x = test_chunker.splitsentences("New love is this and new logning . should i do what my hall . anyone but you can only say :)")
 print(x)
