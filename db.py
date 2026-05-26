@@ -4,7 +4,7 @@ import chromadb
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join (base_dir, "chroma_storage")
-chroma_client = chromadb.Client(db_path , )
+chroma_client = chromadb.PersistentClient(db_path , )
 
 def store_vectors (chunks :list[str], embeddings , doc_id: str):
     """
@@ -14,7 +14,7 @@ def store_vectors (chunks :list[str], embeddings , doc_id: str):
     - embeddings : list of vectors corresponding to the chunks
     - doc_id : a unique identifier for the document (can be a filename or a UUID)
     """
-    collection = chroma_client.get_or_create_collection(name = "my_collecion")
+    collection = chroma_client.get_or_create_collection(name = "my_collection")
 
     ids = [f"{doc_id}_chunk{i}" for i in range (len(chunks))]
 

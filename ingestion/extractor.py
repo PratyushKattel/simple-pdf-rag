@@ -12,5 +12,5 @@ def extract_text_from_pdf(pdf_path):
     data = pymupdf4llm.to_markdown(pdf_path)
     return data
 
-with open("ingestion/test.md",'w') as f:
-    f.write(extract_text_from_pdf("ingestion/test.pdf"))
+# with open("ingestion/test.md",'w') as f:
+#     f.write(extract_text_from_pdf("ingestion/test.pdf"))
