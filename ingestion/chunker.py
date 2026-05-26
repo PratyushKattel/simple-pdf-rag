@@ -14,7 +14,7 @@ class Chunker :
 
         
     
-
-test_chunker = Chunker()
-x = test_chunker.splitsentences("New love is this and new logning . should i do what my hall . anyone but you can only say :)")
-print(x)
+if __name__ == "__main__":
+    test_chunker = Chunker()
+    x = test_chunker.splitsentences("New love is this and new logning . should i do what my hall . anyone but you can only say :)")
+    print(x)

@@ -12,3 +12,4 @@ wheels/
 
 #database
 chroma_storage/
+.env

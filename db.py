@@ -6,7 +6,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join (base_dir, "chroma_storage")
 chroma_client = chromadb.PersistentClient(db_path , )
 
-def store_vectors (chunks :list[str], embeddings , doc_id: str):
+def store_vectors (chunks :list[str], embeddings , doc_id = "default_doc") -> None:
     """
     Stores the chunks and their respecting embeddings
     Args:

@@ -9,11 +9,8 @@ def main():
     Embedder = embedder.Embeder()
 
     chunks = Chunker.splitsentences(text)
-    embeddeings = Embedder.embed(chunks)
-    store_vectors(chunks,embeddeings,"test_doc")
-    
-
-
+    embeddings = Embedder.embed(chunks)
+    store_vectors(embeddings, chunks, "test_doc")
         
     
     
