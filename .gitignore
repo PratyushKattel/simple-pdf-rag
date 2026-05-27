@@ -8,8 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+.env
 
 
 #database
 chroma_storage/
-.env
