@@ -14,7 +14,7 @@ class RagPipeline:
         chunks = self.chunker.splitsentences(text)
         embeddings = self.embedder.embed(chunks)
         for chunk, embedding in zip(chunks, embeddings):
-            store_vectors(embedding, chunk)
+            store_vectors(chunk,embedding)
 
     def query(self, question):
         question_embedding = self.embedder.embed([question])
