@@ -20,13 +20,13 @@ def store_vectors (chunks :list[str], embeddings , doc_id = "default_doc") -> No
 
     collection.add(
         ids=ids,
-        embeddings=embeddings,
+        embeddings=embeddings.tolist(),
         documents=chunks
     )
     print("Sucessfully stored the embeddings for all of the chunks :P")
 
 
-def query_vector (query_embedding , top_k: int = 3) -> list[str]:
+def query_vector (query_embedding , top_k: int = 2) -> list[str]:
     """
     Given a query embedding provides the top_k chunks with similar embeddigns 
     """
